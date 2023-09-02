@@ -75,7 +75,7 @@ const AudiencePage = () => {
                                     />
                                 </svg>
                             }
-                            actions={[<div className="flex ml-6">Labels: <span>1</span></div>]}
+                            actions={[<div key="kljfdkfj" className="flex ml-6">Labels: <span>1</span></div>]}
                         >
                             <p>New York</p>
                         </Card>
