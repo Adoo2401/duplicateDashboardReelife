@@ -19,7 +19,7 @@ const AudiencePage = () => {
                     Array.from({ length: 8 }).map((_, index) => (
                         <Card
                             key={index}
-                            style={{ width: "400px",marginTop:"20px" }}
+                            style={{ width: "300px",marginTop:"20px" }}
                             title={
                                 <Badge
                                     style={{
@@ -75,7 +75,7 @@ const AudiencePage = () => {
                                     />
                                 </svg>
                             }
-                            actions={[<div key="kljfdkfj" className="flex ml-6">Labels: <span>1</span></div>]}
+                            actions={[<div key={"keyonedfdfdf"} className="flex ml-6">Labels: <span>1</span></div>]}
                         >
                             <p>New York</p>
                         </Card>
