@@ -5,7 +5,7 @@ const { Meta } = Card
 
 const Story = ({ img, text }: { img: string; text: string }) => {
     return (
-        <div className="flex flex-col mt-3 items-center space-y-2 hover:scale-110 cursor-pointer ease-in transition">
+        <div className="flex flex-col items-center space-y-2 hover:scale-110 cursor-pointer ease-in transition">
             <div className="relative rounded-full overflow-hidden w-16 h-16">
                 <div className="absolute inset-0 border-2 border-[#bdbdca] rounded-full"></div>
                 <div className="absolute inset-1 rounded-full bg-white">
@@ -30,12 +30,10 @@ const Stories = () => {
                     <Card
                         key={index}
                         style={{ width: 300, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", marginTop: "20px" }}
-                        actions={[<div className='flex w-[250px] justify-end'><div><InfoCircleOutlined /> </div><p className='ml-2'>Audiences</p></div>]}
+                        actions={[<div key="kdjf" className='ml-auto'><InfoCircleOutlined /> <p className='ml-2'>Audiences</p></div>]}
                         cover={<Story text='testing' img={"https://cdn.britannica.com/36/123536-050-95CB0C6E/Variety-fruits-vegetables.jpg"} />}
                         title=""
-                        extra={<div className='flex justify-end w-[250px]'><Button className=" bg-white" size='small' icon={<InfoOutlined />} type='default' /></div>}
-                        bordered={false}
-                        
+                        extra={<Button className="absolute top-2 left-[7rem] bg-white" size='small' icon={<InfoOutlined />} type='default' />}
                     >
 
                         <Meta
